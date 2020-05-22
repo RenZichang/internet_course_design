@@ -1,0 +1,30 @@
+<view class="titleContainer">
+  <text class="big-title">3.模型预测</text>
+</view>
+<view class='input-container'>
+  <text class='algo-title'>设置神经网络的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>隐藏层1的神经元个数</view>
+      <input class='input' type='digit' value='64' name='inputValue1'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>隐藏层1的激活函数</view>
+      <input class='input' type='string' value='relu' name='inputValue2'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>隐藏层2的神经元个数</view>
+      <input class='input' type='digit' value='64' name='inputValue3'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>隐藏层2的激活函数</view>
+      <input class='input' type='string' value='relu' name='inputValue4'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>dropout系数</view>
+      <input class='input' type='digit' value='0.3' name='inputValue5'></input>
+    </view>
+    <button class='btn' style="bottom:1%" form-type='submit'>确定</button>
+  </form>
+</view>

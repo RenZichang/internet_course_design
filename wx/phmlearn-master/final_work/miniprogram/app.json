@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index2/index2",
+    "pages/index/index",
+    "pages/result/result"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "轴承故障预测",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "概况",
+        "iconPath": "images/fjicon.png",
+        "selectedIconPath": "images/fjicon2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "详情",
+        "iconPath": "images/anli.png",
+        "selectedIconPath": "images/anli2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

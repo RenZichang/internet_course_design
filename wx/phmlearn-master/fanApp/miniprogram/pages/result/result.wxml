@@ -1,0 +1,18 @@
+<view class="titleContainer">
+  <text class="big-title">4.查看所有机组状态</text>
+  <view class="return" bindtap="returnTap">返回主界面</view>
+</view>
+<view class="table">
+  <view class="tr">
+    <view class="th">machine_name</view>
+    <view class="td">{{resultArray[0][0]}}</view>
+  </view>
+  <view class="tr">
+    <view class="th">machine_state</view>
+    <view class="td">{{resultArray[1][0]}}</view>
+  </view>
+  <view class="tr">
+    <view class="th">machine_precision</view>
+    <view class="td">{{resultArray[2][0]}}</view>
+  </view>
+</view>

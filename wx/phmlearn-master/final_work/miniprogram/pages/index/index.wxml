@@ -1,0 +1,31 @@
+  <!--index.wxml-->
+<image src="bearingDemo.jpg" style="width:100%"></image>
+
+<view class='input-container'>
+  <view class="box1">
+    <picker bindchange="bindPickerChange1" value="{{Machine_No}}" range="{{Machine_ID_list}}">
+      <view class="picker">
+        选取机组ID：
+        <text style="color:#237ab7;font-weight:bold">{{Machine_ID_list[Machine_No]}}</text>
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view class='input-container'>
+  <view class="box2">
+    <picker bindchange="bindPickerChange2" value="{{bearing_no}}" range="{{bearing_id_list[Machine_No]}}">
+      <view class="picker">
+        选取轴承ID：
+        <text style="color:#237ab7;font-weight:bold">{{bearing_id_list[Machine_No][bearing_no]}}</text>
+      </view>
+    </picker>
+  </view>
+</view>
+<view class='line'></view>
+
+<form bindsubmit='toResult'>
+  <button class='btn' style="bottom:1%" form-type='submit'>确定</button>
+</form>
